@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import spacy
-
+!python -m spacy download en_core_web_sm
 with open('data.pkl', 'rb') as model_file:
     model= pickle.load(model_file)
 
